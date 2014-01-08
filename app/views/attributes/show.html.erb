@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @attribute.name %>
+</p>
+
+<p>
+  <b>Entity type:</b>
+  <%= @attribute.entity_type %>
+</p>
+
+<p>
+  <b>Backend type:</b>
+  <%= @attribute.backend_type %>
+</p>
+
+<p>
+  <b>Hydra attr:</b>
+  <%= @attribute.hydra_attr_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_attribute_path(@attribute) %> |
+<%= link_to 'Back', attributes_path %>

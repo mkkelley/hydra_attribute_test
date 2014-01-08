@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  entity_type: MyString
+  backend_type: MyString
+  hydra_attr_id: 
+
+two:
+  name: MyString
+  entity_type: MyString
+  backend_type: MyString
+  hydra_attr_id: 

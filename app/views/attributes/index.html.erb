@@ -1,0 +1,35 @@
+<h1>Listing attributes</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Entity type</th>
+    <th>Backend type</th>
+    <th>Hydra attr</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @attributes.each do |attribute| %>
+  <tr>
+    <td><%= attribute.name %></td>
+    <td><%= attribute.entity_type %></td>
+    <td><%= attribute.backend_type %></td>
+    <td><%= attribute.hydra_attr_id %></td>
+    <td><%= link_to 'Show', attribute %></td>
+    <td><%= link_to 'Edit', edit_attribute_path(attribute) %></td>
+    <td><%= link_to 'Destroy', attribute, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+Listing Employee.hydra_attributes:<br>
+
+<%= Employee.hydra_attributes.each do |attr| %>
+  <%= attr.name %><br>
+<% end %>
+
+<br />
+
+<%= link_to 'New Attribute', new_attribute_path %>
